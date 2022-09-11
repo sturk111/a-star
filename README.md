@@ -10,7 +10,7 @@ The A<sup>*</sup> algorithm works by searching along paths in the space of all p
 
 We structure the search using a binary heap implementation of a minimum priority queue.  The nodes in our priority queue are structured as follows:
 
-``python
+```python
 class Node():
 	def __init__(self,board, g, prev, heuristic = 'hamming'):
 		self.board = board #representation of the current board
