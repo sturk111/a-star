@@ -6,7 +6,7 @@ We will give a brief summary of the problem statement.  We are given an n x n gr
 
 ![Alt text](puzzle_example.png)
 
-The A<sup>*</sup> algorithm works by searching along paths in the space of all possible boards according to a heuristic that captures the distance of the present board from the start and the distance of the present board from the goal.  Effectively, we want to investigate those boards first that are both closest to the start and closest to the goal, as that will lead us to a shortest path to the objective.  The advantage of this heuristic approach over "blind" methods like Dijkstra's algorithm (which searches all paths in any order) is simple speed.  Using a heuristic effectively narrows the search space by guiding the algorithm along a set of candidate paths most likely to lead to the goal, thereby reducing the time complexity.
+The A<sup>*</sup> algorithm works by searching along paths in the space of all possible boards according to a heuristic that captures the distance of the present board from the start and the distance of the present board from the goal.  Effectively, we want to investigate those boards first that are both closest to the start and closest to the goal, as that will lead us to a shortest path to the objective.  The advantage of this heuristic approach over "blind" methods like Dijkstra's algorithm is simple speed.  Using a heuristic effectively narrows the search space by guiding the algorithm along a set of candidate paths most likely to lead to the goal, thereby reducing the time complexity.
 
 We structure the search using a binary heap implementation of a minimum priority queue.  The nodes in our priority queue are structured as follows:
 
